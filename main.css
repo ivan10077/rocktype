@@ -26,6 +26,13 @@ a {
     font-family: monospace;
 }
 
+.e1, .e2 {
+    color: antiquewhite;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 17px;
+}
+
 .button-container {
     margin: 20px 0;
 }

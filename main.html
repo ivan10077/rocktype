@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RockType - Main</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="main-container">
+        <a href="splash.html">
+            <h1 class="title">RockType</h1>
+        </a>     
+        <div class="button-container">
+            <button class="menu-btn" onclick="location.href='../physics/physics.html'">Physics</button>
+            <button class="menu-btn" onclick="location.href='../chemistry/chemistry.html'">Chemistry</button>
+            <button class="menu-btn" onclick="toggleFormulas()">Formula</button>
+        </div>
+        <div id="formula-buttons" class="formula-buttons hidden">
+            <button class="sub-menu-btn" onclick="location.href='../physicsformula/physicsf.html'">Physics</button>
+            <button class="sub-menu-btn" onclick="location.href='../chemistryformula/chemistryf.html'">Chemistry</button>
+            <button class="sub-menu-btn" onclick="location.href='../mathsformula/mathsf.html'">Maths</button>
+        </div>
+    </div>
+    <div class="copyright">
+        © 2024 RockType. All rights reserved.
+    </div>
+
+    <script>
+        function toggleFormulas() {
+            var formulaButtons = document.getElementById("formula-buttons");
+            if (formulaButtons.classList.contains("hidden")) {
+                formulaButtons.classList.remove("hidden");
+                formulaButtons.classList.add("slide-down");
+            } else {
+                formulaButtons.classList.add("hidden");
+                formulaButtons.classList.remove("slide-down");
+            }
+        }
+    </script>
+</body>
+</html>
